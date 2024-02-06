@@ -4,97 +4,193 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: Poppins;
 }
 
-:root {
-    --primary: #ff4d30;
-    --black: #010103;
-    --lightblack: #2d2d2d;
-    --gray: #706f7b;
-  }
+/*  */
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 80px 0;
+}
 
+.row {
+  width: 100%;
+  height: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  
+}
 
-  
-  .open {
-    overflow-y: hidden;
-  }
-  
-  /* Navigation */
-  
-  nav {
-    width: 100%;
-    position: absolute;
-    right: 0;
-    top: 0;
-    left: 0;
-    z-index: 2;
-  }
-
-a {
-    text-decoration: none;
-  }
-  
-  button {
-    cursor: pointer;
-  }
+/* Nav Section */
+nav {
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+}
 
 .nav__container {
-    width: 100%;
-    height: 100%;
-    max-width: 1280px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 28px 20px;
-  }
-  
-  .nav__img__wrapper {
-    width: 145px;
-  }
-  
-  .nav__img {
-    width: 100%;
-    height: 100%;
-  }
-  
-  .nav__links {
-    display: flex;
-    gap: 20px;
-  }
-  
-  .nav__link {
-    font-size: 16px;
-    font-weight: 600;
-    color: var(--black);
-    transition: 300ms ease;
-  }
-  
-  .nav__link:hover {
-    color: var(--primary);
-  }
-  
-  .nav__btns {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-  }
-  
-  .nav__btns__register {
-    font-size: 16px;
-    font-weight: 600;
-    padding: 12px 24px;
-    background: var(--primary);
-    color: white;
-    border: none;
-    border-radius: 4px;
-    outline: none;
-    box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.35);
-    transition: 300ms ease;
-  }
-  
-  .nav__btns__register:hover {
-    background-color: #fa4226;
-    box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.5);
-  }
-  
+  width: 100%;
+  height: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28px 20px;
+}
+
+.nav__links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav__buttons__links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav__img__link {
+  width: 145px;
+}
+
+.nav__img {
+  width: 100%;
+  height: 100%;
+}
+
+.nav__link,
+.nav__button__link {
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.nav__button__link:hover {
+  color: #ff4d30;
+  transition: 200ms;
+}
+.nav__link:hover {
+  color: #ff4d30;
+  transition: 200ms;
+}
+
+.nav__button {
+  border: none;
+  color: white;
+  cursor: pointer;
+  background-color: #ff4d30;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 4px;
+  box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.35);
+}
+
+.nav__button:hover {
+  background-color: #ff4d30;
+  box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.5);
+}
+
+/* Header Section */
+
+header {
+  background-color: #f8f8f8;
+  height: 100vh;
+}
+
+.header__row {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.header__bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.header__img__wrapper {
+  position: absolute;
+  width: 65%;
+  right: 0;
+  z-index: 2;
+  margin-top: 56px;
+}
+
+.header__img {
+  width: 100%;
+  height: 100%;
+}
+
+.header__text {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  gap: 12px;
+}
+
+.header__text__subtitle {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.header__text__title {
+  font-size: 52px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.header__span {
+  color: #ff4d30;
+}
+
+.header__para {
+  font-size: 16px;
+  color: #706f7b;
+}
+
+.header__book__button {
+  font-size: 16px;
+  color: white;
+  background-color: #ff4d30;
+  border: none;
+  cursor: pointer;
+  padding: 18px 30px;
+  outline: none;
+  border-radius: 4px;
+  font-weight: 700;
+  box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.35);
+}
+
+.header__learn__button {
+  font-size: 16px;
+  color: white;
+  background-color: black;
+  border: none;
+  cursor: pointer;
+  padding: 18px 30px;
+  outline: none;
+  border-radius: 8px;
+  font-weight: 700;
+}
+
+.header__buttons__wrapper {
+  display: flex;
+  gap: 16px;
+}
+
+.header__book__button:hover{
+  background-color: #ff4d30;
+  box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.5);
+}
+
+.header__learn__button:hover{
+   background-color: transparent;
+   border: 2px solid black;
+   color: black;
+}
