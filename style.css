@@ -384,8 +384,8 @@ header {
 }
 
 .choose__rightside__img {
-  width: 110px;
-  height: 110px;
+  width: 100%;
+  height: 100%;
 }
 
 .choose__rightside__title {
@@ -404,14 +404,13 @@ header {
   background-color: #f8f8f8;
 }
 
-.test__row{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    text-align: center;
+.test__row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
 }
-
 
 .test__subtitle {
   font-size: 22px;
@@ -428,63 +427,213 @@ header {
   margin-top: 20px;
 }
 /*  */
-.testimonials__list {
-    display: flex;
-    margin-top: 80px;
-    gap: 24px;
-  }
-  
-  .testimonial {
-    background: white;
-    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.08);
-    max-width: 540px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding: 56px;
-    gap: 40px;
-  }
-  
-  .testimonial__review {
-    font-size: 22px;
-    text-align: left;
-  }
-  
-  .testimonial__info {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-  }
-  
-  .testimonial__info__img__wrapper {
-    width: 72px;
-    height: 72px;
-    border-radius: 9999px;
-    overflow: hidden;
-  }
-  
-  .testimonial__info__img {
-    width: 100%;
-    height: 100%;
-  }
-  
-  .testimonial__info__profile {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-  }
-  
-  .testimonial__info__name {
-    font-size: 18px;
-  }
-  
-  .testimonial__info__location {
-    font-size: 16px;
-    font-weight: 400;
-  }
-  
-  .testimonial__info__icon {
-    margin-left: auto;
-    font-size: 48px;
-    color: #ff4d30;
-  }
+.Testimonials__list {
+  display: flex;
+  margin-top: 80px;
+  gap: 24px;
+}
+
+.Testimonial {
+  background-color: white;
+  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.35);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 540px;
+  padding: 56px;
+  gap: 40px;
+}
+
+.Testimonial__review {
+  font-size: 22px;
+  text-align: left;
+}
+
+.Testimonial__info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.Testimonial__img__wrapper {
+  width: 72px;
+  height: 72px;
+  border-radius: 9999px;
+  overflow: hidden;
+}
+
+.Testimonial__img {
+  width: 100%;
+  height: 100%;
+}
+
+.Testimonial__info__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.Testimonial__name {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.Testimonial__location {
+  font-size: 16px;
+}
+
+.testimonial__info__icon {
+  font-size: 42px;
+  color: #ff4d30;
+  margin-left: auto;
+}
+
+/* download */
+
+.download {
+  background-image: url(./assets/download-8.png);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 550px;
+}
+
+.download__tile {
+  font-size: 42px;
+}
+
+.download__para {
+  font-size: 16px;
+  color: #706f7b;
+}
+
+.download__img__wrapper {
+  display: flex;
+  gap: 32px;
+  max-width: 550px;
+}
+
+.download__img {
+  width: 100%;
+  height: 100%;
+}
+
+.download__link {
+  width: 40%;
+}
+
+/* footer */
+
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 48px;
+}
+
+.footer__contact {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer__contact__title {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.footer__contact__para {
+  font-size: 16px;
+  color: #706f7b;
+  max-width: 310px;
+}
+
+.footer__contact__number {
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  color: black;
+}
+
+.footer__contact__email:hover,
+.footer__contact__number:hover,
+.footer__contact__design:hover {
+  color: #ff4d30;
+  transition: 200ms;
+  cursor: pointer;
+}
+
+.company__list:hover {
+  color: #ff4d30;
+  transition: 200ms;
+  cursor: pointer;
+}
+
+.footer__contact__email {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.footer__contact__design {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.footer__comany {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer__hours {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.subscription {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 20%;
+}
+
+.subscription__info {
+  max-width: 250px;
+}
+
+.subscription__label {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.subscription__input {
+  padding: 15px;
+  border: none;
+  background-color: #ececec;
+}
+
+.subscription__button {
+  padding: 12px;
+  color: white;
+  background-color: #ff4d30;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 4px;
+  box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.35);
+}
+
+.subscription__button:hover {
+  box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.5);
+  background-color: #e4543d;
+  color: white;
+}
